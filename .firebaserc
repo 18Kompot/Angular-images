@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "images-249c8": {
+      "hosting": {
+        "angular-images": [
+          "images-249c8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "images-249c8"
+  }
+}
