@@ -69,9 +69,7 @@ export class FirebaseComponent implements OnInit {
       });
   }
 
-  // use this function to create and update document.
-  // Importent note, if document not exist the function will create document. recommendation to use update methode.
-  createDocumentByFulPath(
+  createDocumentByFullPath(
     pathToDocument: string,
     data: any,
     merge: boolean = true
@@ -87,7 +85,7 @@ export class FirebaseComponent implements OnInit {
       });
   }
 
-  // This function reports to all about changes in database.
+  // Function auto-refreshes newly added information
   getCollectionInRealTime(collection: string) {
     this.unsubscribeFromCollection = this.afs
       .collection(collection)
